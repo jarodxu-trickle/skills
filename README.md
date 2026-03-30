@@ -14,7 +14,7 @@ Repair corrupted Claude Code session files that fail with "Invalid signature in 
 claude install-skill /path/to/fix-thinking-signature
 ```
 
-Or copy the `skills/fix-thinking-signature/` directory to `~/.claude/skills/`.
+Or copy the `fix-thinking-signature/` directory to `~/.claude/skills/`.
 
 ## License
 

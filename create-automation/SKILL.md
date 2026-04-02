@@ -25,19 +25,7 @@ to open a pre-filled dialog and confirm. You do NOT create the automation direct
 
 ## Step-by-step procedure
 
-### 1. Check if this session already has an automation
-
-Before doing anything else, query the current session's automation status:
-
-```bash
-curl -s -H "Authorization: Bearer $CAPY_SECRET" \
-  "$CAPY_BASE_URL/api/sessions/$CAPY_SESSION_ID/periodic-task"
-```
-
-- **200 response** (automation exists): Tell the user this desktop already has an automation (mention its name if available). Suggest they go to the Automations page to view or modify it. **Stop here — do not output an `<automation />` tag.**
-- **404 response** (no automation): Continue to the next step.
-
-### 2. Extract parameters from the conversation
+### 1. Extract parameters from the conversation
 
 Identify these fields from what the user said:
 
@@ -58,7 +46,7 @@ Identify these fields from what the user said:
 - "weekdays only" → `days-of-week="1,2,3,4,5"`
 - `message` must be complete and standalone — enough context to run without this conversation.
 
-### 3. Output the `<automation />` tag
+### 2. Output the `<automation />` tag
 
 Include the tag inline in your reply:
 
@@ -88,7 +76,7 @@ I'll set that up as an interval automation:
 Click **Create** on the card above to save it.
 ```
 
-### 4. Guide the user
+### 3. Guide the user
 
 After outputting the tag, tell the user:
 - Click the **Create** button on the preview card to open the automation dialog

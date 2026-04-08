@@ -63,7 +63,7 @@ Sure! Here's a weekday morning automation:
 
 <automation name="Daily Standup Summary" message="Summarize yesterday's git commits and open issues, then suggest today's priorities." schedule-type="daily" time-of-day="09:00" days-of-week="1,2,3,4,5" />
 
-Click **Create** on the card above to review the settings and save it.
+Click **Create** on the automation card to review the settings and save it.
 ```
 
 **Example — every 2 hours:**
@@ -73,13 +73,13 @@ I'll set that up as an interval automation:
 
 <automation name="Hourly Health Check" message="Check service health endpoints and report any degraded or down services." schedule-type="interval" interval-minutes="120" />
 
-Click **Create** on the card above to save it.
+Click **Create** on the automation card to save it.
 ```
 
 ### 3. Guide the user
 
 After outputting the tag, tell the user:
-- Click the **Create** button on the preview card to open the automation dialog
+- Click the **Create** button on the automation card to open the dialog
 - They can review and adjust any field before saving
 - The automation will start running on the next scheduled cycle after saving
 
